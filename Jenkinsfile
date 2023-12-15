@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO_URL = 'https://github.com/namratasgit/pipeline1.git'
+        GIT_REPO_URL = 'https://github.com/kavanakarader/labsheet5.git'
         NGINX_PATH = 'C:\Users\Admin\Downloads\nginx-1.24.0 (1)\nginx-1.24.0\htmldocs'
     }
 
@@ -11,7 +11,7 @@ pipeline {
             steps {
                 script {
                     // Use the checkout step to clone the Git repository
-                    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: GIT_REPO_URL]]])
+                    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/kavanakarader/labsheet5.git']]])
                 }
             }
         }
