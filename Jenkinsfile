@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         GIT_REPO_URL = 'https://github.com/kavanakarader/labsheet5.git'
-        NGINX_PATH = 'C:\Users\Admin\Downloads\nginx-1.24.0 (1)\nginx-1.24.0\htmldocs'
+        NGINX_PATH = 'C:\\Users\\Admin\\Downloads\\nginx-1.24.0 (1)\\nginx-1.24.0\\htmldocs'
     }
 
     stages {
